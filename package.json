@@ -2,7 +2,7 @@
   "name": "directus-extension-noindex",
   "description": "Don't index any Directus page on search engines",
   "icon": "extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "directus",
     "directus-extension",
