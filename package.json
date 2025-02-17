@@ -1,0 +1,54 @@
+{
+  "name": "directus-extension-noindex",
+  "description": "Don't index any Directus page on search engines",
+  "icon": "extension",
+  "version": "1.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-extension-hook",
+    "noindex",
+    "nofollow",
+    "block",
+    "seo",
+    "search",
+    "engine",
+    "list"
+  ],
+  "author": {
+    "name": "José Varela",
+    "url": "https://www.joselcvarela.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joselcvarela/directus-extension-noindex"
+  },
+  "bugs": {
+    "url": "https://github.com/joselcvarela/directus-extension-noindex/issues"
+  },
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "directus:extension": {
+    "type": "hook",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.10.0",
+    "sandbox": {
+      "enabled": true,
+      "requestedScopes": {}
+    }
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "13.0.1",
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}
